@@ -1,16 +1,19 @@
 
-from flask import Flask
+from flask import Flask, render_template
+from flask_sqlalchemy import SQLAlchemy
+from config import config
 
-app = Flask(__name__)
-from.import views
+db = SQLAlchemy
 
-from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired
+def create_app(config_name):
+	app = Flask(__name__)
+	app.config.from_object(config[config_name])
+	confih[config_name].init_app
 
-class NameForm(FlaskForm):
-    name = StringField('What is your name?', validators=[DataRequired()])
-    submit = SubmitField('Submit')
-####Move toconfig.py####
 
-app.config['SECRET_KEY'] = '\xa5\x11\x06\x03q\xb4\xe5\x08o\xdb\xba9\x8fxT\xa9\xf6\xe6\x1bi\tW\x03\xd6'
+	db.init_app(app)
+
+### routes go here ###
+
+	return app
+
