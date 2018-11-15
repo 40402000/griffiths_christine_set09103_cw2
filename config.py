@@ -15,10 +15,10 @@ class DevelopmentConfig(Config):
 	SQLALCHEMY_DATABASE_URI =\
     		'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
 
-class TestConfig(Config):
+class TestingConfig(Config):
 	TESTING = True
-	SQLALCHEMY_DATABASE_URI =\
-                'sqlite:///' 
+	SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_DATABASE_URL') or\
+                'sqlite://' 
 ### different database for testing avoids accidental overwrites ###
 
 config = {
@@ -26,5 +26,7 @@ config = {
 	'testing': TestingConfig,
 	### eventual production config here ###
 	
-	'default': Development
+	'default': DevelopmentConfig
 }
+
+
