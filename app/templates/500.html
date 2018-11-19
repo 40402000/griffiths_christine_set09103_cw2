@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head %}
+        {{ super() }}
+{% endblock %}
+
+
+{% block content %}
+        <p>500 INTERNAL SERVER ERROR</p>
+        <img src="{{ url_for('static', filename='images/error500.jpg') }}">
+        <h1>Oops, something went wrong!</h1>
+        <h3>Here is what you can do:</h3>
+        <p>Reload this page</p>
+        <p>Try again in 30 minutes</p>
+        <p>Drop us a line<a href="{{ url_for('index') }}">Contact must go here</a></p>
+{% endblock %}
+
+{% block scripts %}
+        {{ super() }}
+{% endblock %}
+</body>
+
+

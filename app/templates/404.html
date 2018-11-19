@@ -6,11 +6,13 @@
 
 
 {% block content %}
+	<p>ERROR 404, NOT FOUND</p>
+	<img src="{{ url_for('static', filename='images/error404.jpg') }}">
     	<h1>Oops, something went wrong!</h1>
 	<h3>Here is what you can do:</h3>
-	<p>Check you typed the address corectly</p>
+	<p>Check you typed the address correctly</p>
 	<p>Go back to your previous page</p>
-    	<p>Let us take you<a href="{{ url_for('index') }}">back</a></p>
+    	<p>Let us take you<a href="{{ url_for('index') }}"> back</a></p>
 {% endblock %}
 
 {% block scripts %}
