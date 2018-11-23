@@ -14,8 +14,6 @@
             </head>
 {% endblock %}
 <body>
-<div class="wrapper">
-<div class="container">
 <!-- Navigation -->
 <nav class="navbar navbar-inverse">
     <div class="navbar-header">
@@ -43,6 +41,9 @@
         </ul>
     </div><!-- collapse navbar-collapse -->
 </nav>
+<div class="wrapper">
+<div class="container">
+
 
 <script src="{{ url_for('static', filename='jquery/jquery.cookiebar.js') }}"></script>
 <script>
@@ -67,10 +68,10 @@
 
 
     {% block content %} {% endblock %}
-
-
-    <div class="footer"> <!-- Footer Begins-->
-        <div class="container"> <!--Open Container-->
+	
+	<div class="footer">
+	<div class=" text-center"> 
+        <div class="container" id="footerContainer"> <!--Open Container-->
             <div class="row">
                 <div class="col-sm-4 terms">
                     <a href="{{ url_for('terms') }}">Terms &amp; Conditions</a>
@@ -83,10 +84,15 @@
                 </div>
             </div>
         </div><!--close container -->
+	</div>
     </div><!--close footer -->
-    
-    
 
+
+</div><!-- close container -->
+
+</div><!-- close wrapper -->
+
+     
     {% block scripts %}
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -94,8 +100,8 @@
     	<script src="/static/js/bootstrap.min.js"></script>
 	{{ moment.include_moment() }}
     {% endblock %}
-</div><!-- close container -->
-</div><!-- close wrapper -->
+
+
 </body>
 </html> 
 

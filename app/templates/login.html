@@ -36,9 +36,10 @@
 	</p>{% for error in form.password.errors %}
 	<span style="color: red;">[{{ error }}]</span>
 	{% endfor %}
-      
+     	<div class="align-center"> 
         <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
-        <p>{{ form.submit(class="btn submitBtn") }}</p>
+        <p>{{ form.submit(class="btn-success") }}</p>
+	</div>
 	</div>
 </div>
 	<div class="col-sm-5">
@@ -53,7 +54,4 @@
 {% block scripts %}
         {{ super() }}
 {% endblock %}
-</body>
 
-</body>
-</html>
