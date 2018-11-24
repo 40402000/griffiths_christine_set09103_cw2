@@ -113,3 +113,16 @@ ul {
 #cookie-bar .cb-disable:hover {background:#bb0000;}
 #cookie-bar .cb-policy {background: black;}
 #cookie-bar .cb-policy:hover {background: black;}
+
+.errorImage {
+max-height: 500px;
+width:auto;
+}
+
+.darker {
+color: #212F3C;
+}
+
+p, ul, ol, li, a {
+font-size: 16px;
+} 

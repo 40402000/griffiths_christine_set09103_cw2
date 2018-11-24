@@ -6,13 +6,27 @@
 
 
 {% block content %}
-        <p>500 INTERNAL SERVER ERROR</p>
-        <img src="{{ url_for('static', filename='images/error500.jpg') }}">
-        <h1>Oops, something went wrong!</h1>
-        <h3>Here is what you can do:</h3>
-        <p>Reload this page</p>
-        <p>Try again in 30 minutes</p>
-        <p>Drop us a line<a href="{{ url_for('index') }}">Contact must go here</a></p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h1>500 INTERNAL SERVER ERROR</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <img class="img-responsive errorImage" src="{{ url_for('static', filename='images/error500.jpg') }}">
+        </div>
+        <div class="col-sm-4 col-sm-offset-2">
+            <h1>Sorry, something went wrong!</h1>
+            <h3>Here is what you can do:</h3>
+            <ul>
+                <li>Reload this page</li>
+                <li>Try again in 30 minutes<li>
+                <li>Drop us a line: <a class="darker" href="mailto:someone@yoursite.com">Email Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 </div>
 </div>
@@ -22,6 +36,3 @@
 {% block scripts %}
         {{ super() }}
 {% endblock %}
-</body>
-
-

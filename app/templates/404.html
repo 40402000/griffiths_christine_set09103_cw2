@@ -6,13 +6,27 @@
 
 
 {% block content %}
-	<p>ERROR 404, NOT FOUND</p>
-	<img src="{{ url_for('static', filename='images/error404.jpg') }}">
-    	<h1>Oops, something went wrong!</h1>
-	<h3>Here is what you can do:</h3>
-	<p>Check you typed the address correctly</p>
-	<p>Go back to your previous page</p>
-    	<p>Let us take you<a href="{{ url_for('index') }}"> back</a></p>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h1>ERROR 404, NOT FOUND</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <img class="img-responsive errorImage" src="{{ url_for('static', filename='images/error404.jpg') }}">
+        </div>
+        <div class="col-sm-4">
+            <h1>Oops, something went wrong!</h1>
+            <h3>Here is what you can do:</h3>
+            <ul>
+                <li>Check you typed the address correctly</li>
+                <li>Go back to your previous page<li>
+                <li>Let us take you <a class="darker" href="{{ url_for('index') }}">&larr; back</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 </div>
 </div>
@@ -22,4 +36,3 @@
 {% block scripts %}
         {{ super() }}
 {% endblock %}
-
