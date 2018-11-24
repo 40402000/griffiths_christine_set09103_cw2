@@ -125,4 +125,14 @@ color: #212F3C;
 
 p, ul, ol, li, a {
 font-size: 16px;
+}
+
+.spaced {
+padding-top: 30px;
+padding-bottom: 30px;
 } 
+
+.profileImage {
+-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
