@@ -3,50 +3,50 @@ h1, h2, h4, h5, h6{
 }
 
 h3, p, ol, ul, li, a{
-font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+	font-family: "Trebuchet MS", Helvetica, sans-serif !important;
 }
 
 a{
-    color: #9d9d9d;;
+    color: #9d9d9d;
     text-decoration: underline;
 }
 
 div#footerContainer.container {
-background-color: #000000;
-width: 100%;
-padding-top: 20px;
-padding-bottom: 20px;
+	background-color: #000000;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .copy {
-color: #9d9d9d;
+	color: #9d9d9d;
 }
 
 div.wrapper {
-background: #4c4c4c; /* Old browsers */
-background: -moz-linear-gradient(top, #4c4c4c 0%, #666666 0%, #595959 5%, #474747 9%, #2b2b2b 22%, #1c1c1c 32%, #1c1c1c 32%, #1c1c1c 39%, #000000 53%, #000000 53%, #2c2c2c 70%, #2c2c2c 70%, #111111 82%, #131313 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #4c4c4c 0%,#666666 0%,#595959 5%,#474747 9%,#2b2b2b 22%,#1c1c1c 32%,#1c1c1c 32%,#1c1c1c 39%,#000000 53%,#000000 53%,#2c2c2c 70%,#2c2c2c 70%,#111111 82%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #4c4c4c 0%,#666666 0%,#595959 5%,#474747 9%,#2b2b2b 22%,#1c1c1c 32%,#1c1c1c 32%,#1c1c1c 39%,#000000 53%,#000000 53%,#2c2c2c 70%,#2c2c2c 70%,#111111 82%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
-margin-top: -20px;
+	background: #4c4c4c; /* Old browsers */
+	background: -moz-linear-gradient(top, #4c4c4c 0%, #666666 0%, #595959 5%, #474747 9%, #2b2b2b 22%, #1c1c1c 32%, #1c1c1c 32%, #1c1c1c 39%, #000000 53%, #000000 53%, #2c2c2c 70%, #2c2c2c 70%, #111111 82%, #131313 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #4c4c4c 0%,#666666 0%,#595959 5%,#474747 9%,#2b2b2b 22%,#1c1c1c 32%,#1c1c1c 32%,#1c1c1c 39%,#000000 53%,#000000 53%,#2c2c2c 70%,#2c2c2c 70%,#111111 82%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #4c4c4c 0%,#666666 0%,#595959 5%,#474747 9%,#2b2b2b 22%,#1c1c1c 32%,#1c1c1c 32%,#1c1c1c 39%,#000000 53%,#000000 53%,#2c2c2c 70%,#2c2c2c 70%,#111111 82%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+	margin-top: -20px;
 }
 * {
   border-radius: 0 !important;
   -moz-border-radius: 0 !important;
 }
 div.container{
-background-color:#FFFFFF;
-    margin-left: auto;
-    margin-right: auto;
+	background-color:#FFFFFF;
+    	margin-left: auto;
+    	margin-right: auto;
 	}
 
 blockquote {
-font-family: Times;
-font-style: italic;
+	font-family: Times;
+	font-style: italic;
 }
 
 nav.navbar-inverse {
-border: none;
+	border: none;
 	box-shadow: none;
 	background-color: #000000;
 	font-size: 16px;
@@ -54,8 +54,8 @@ border: none;
 	text-align:center;
 }
 
-nav.navbar.navbar-inverse {
-width: 100%;
+	nav.navbar.navbar-inverse {
+	width: 100%;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -64,75 +64,132 @@ width: 100%;
 
 
 #logo {
-height:80px;
-width: auto; 
-margin-top: -20px;
-padding-right: 150px; 
-padding-right: 40px;
+	height:80px;
+	width: auto; 
+	margin-top: -20px;
+	padding-right: 150px; 
+	padding-right: 40px;
 }
 
 ul {
-  list-style-type: none;
+  	list-style-type: none;
 }
 #topBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 144px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 14px; /* Increase font size */
+    	display: none; /* Hidden by default */
+    	position: fixed; /* Fixed/sticky position */
+    	bottom: 144px; /* Place the button at the bottom of the page */
+    	right: 30px; /* Place the button 30px from the right */
+    	z-index: 99; /* Make sure it does not overlap */
+    	border: none; /* Remove borders */
+    	outline: none; /* Remove outline */
+    	background-color: #000000; /* Set a background color */
+    	color: white; /* Text color */
+    	cursor: pointer; /* Add a mouse pointer on hover */
+    	padding: 15px; /* Some padding */
+    	border-radius: 10px; /* Rounded corners */
+    	font-size: 14px; /* Increase font size */
 }
 
 #topBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    	background-color: #555; /* Add a dark-grey background on hover */
 }
 
 #cookie-bar { 
-    background: transparent;
-    background-color: #000000;
-    font-size: 0.8em;
-    height:auto; 
-    line-height:24px; color:white; text-align:center; padding: 5px;
-    position: fixed; z-index: 99; bottom: -5; right: 10px; left: 10px; width: 95%; 
-    margin: auto;
-    border-radius: 10px;}
-#cookie-bar.fixed {position:fixed; top: 500px; left:0; width:100%;}
-#cookie-bar.fixed.bottom {bottom:0; top:auto;}
-#cookie-bar p {margin:0; padding:0; color: white;}
-#cookie-bar a {color: white; display:inline-block; border-radius:3px; text-decoration:none; padding:0 6px; margin-left:8px;}
-#cookie-bar .cb-enable {background:#15730A;}
-#cookie-bar .cb-enable:hover {background: #21A813;}
-#cookie-bar .cb-disable {background:#990000;}
-#cookie-bar .cb-disable:hover {background:#bb0000;}
-#cookie-bar .cb-policy {background: black;}
-#cookie-bar .cb-policy:hover {background: black;}
+    	background: transparent;
+    	background-color: #000000;
+    	font-size: 0.8em;
+    	height:auto; 
+    	line-height:24px; color:white; text-align:center; padding: 5px;
+    	position: fixed; z-index: 99; bottom: -5; right: 10px; left: 10px; width: 95%; 
+    	margin: auto;
+    	border-radius: 10px;
+}
+
+#cookie-bar.fixed {
+	position:fixed; top: 500px; left:0; width:100%;
+}
+
+#cookie-bar.fixed.bottom {
+	bottom:0; top:auto;
+}
+
+#cookie-bar p {
+	margin:0; padding:0; color: white;
+	}
+#cookie-bar a {
+	color: white; 
+	display:inline-block; 
+	border-radius:3px; 
+	text-decoration:none; 
+	padding:0 6px; margin-left:8px;
+}
+
+#cookie-bar .cb-enable {
+	background:#15730A;
+}
+
+#cookie-bar .cb-enable:hover {
+	background: #21A813;
+}
+
+
+#cookie-bar .cb-disable {
+	background:#990000;
+}
+
+#cookie-bar .cb-disable:hover {
+
+background:#bb0000;
+}
+
+#cookie-bar .cb-policy {
+	background: black;
+}
+
+#cookie-bar .cb-policy:hover {
+	background: black;
+}
+	
 
 .errorImage {
-max-height: 500px;
-width:auto;
+	max-height: 500px;
+	width:auto;
 }
 
 .darker {
-color: #212F3C;
+	color: #212F3C;
 }
 
 p, ul, ol, li, a {
-font-size: 16px;
+	font-size: 16px;
 }
 
 .spaced {
-padding-top: 30px;
-padding-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 } 
 
 .profileImage {
--webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+.fadingLine{ 
+    	display:block;
+    	border:none;
+    	color:white;
+    	height:1px;
+    	background:black;
+    	background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
+
+a.userPost {
+	font-size: 20px;
+	color: #212f3c;
+	font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+}
+
+.padPost {
+	padding-top: 15px;
+	padding-bottom: 15px;
 }

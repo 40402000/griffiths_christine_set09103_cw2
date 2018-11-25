@@ -7,28 +7,42 @@
 {% endblock %}
 
 {% block content %}
-	<h1>Hi, {{ current_user.username }}!</h1>
+	
+
+<h1>Hi, {{ current_user.username }}!</h1>
 	{% if form %}
-    	<form action="" method="post">
-        		{{ form.hidden_tag() }}
-        	<p>
-            		{{ form.post.label }}<br>
-            		{{ form.post(cols=32, rows=4) }}<br>
-            		{% for error in form.post.errors %}
-            		<span style="color: red;">[{{ error }}]</span>
-            		{% endfor %}
-        	</p>
-        	<p>{{ form.submit() }}</p>
+<div class="row">
+	<div class="col-md-4 offset-col-md-2">
+    		<form action="" method="post">
+			<div class="form-group">
+        			{{ form.hidden_tag() }}
+        		<p>
+            			{{ form.post.label }}<br>
+            			{{ form.post(cols=32, rows=4) }}<br>
+            			{% for error in form.post.errors %}
+            			<span style="color: red;">[{{ error }}]</span>
+            			{% endfor %}
+        		</p>
+        		<p>{{ form.submit(class="btn btn-success") }}</p>
+			</div>
+	</div>
+	<div class="col-md-4">
+		<blockquote>How's your day going? Have you seen or heard something interesting? Tell your followers.
+		Annex is the place where you can express yourself. So, let it all out*.</blockquote>
+		<blockquote>*Within reason</blockquote>
+	</div>
+</div>
+
     	</form>
 	{% endif %}
 	{% for post in posts %}
         	{% include '_post.html' %}
     	{% endfor %}
     	{% if prev_url %}
-    	<a href="{{ prev_url }}">Newer posts</a>
+    	<a class="darker" href="{{ prev_url }}">Newer posts &rarr;</a>
     	{% endif %}
     	{% if next_url %}
-    	<a href="{{ next_url }}">Older posts</a>
+    	<a class="darker" href="{{ next_url }}">Older posts &larr;</a>
     	{% endif %}
 	<script>
         //Posts could potentially be numerous, this button brings user back to top and navigation //

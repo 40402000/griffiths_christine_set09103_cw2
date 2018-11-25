@@ -15,42 +15,44 @@
 </div>
 <div class="row">
         <div class="col-sm-offset-1  col-sm-5">
-    <form action="" method="post">
-            <h3>Register</h3>
-        {{ form.hidden_tag() }}
-        <p>
-            {{ form.username.label }}<br>
-            {{ form.username(size=32) }}<br>
-            {% for error in form.username.errors %}
-            <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        <p>
-            {{ form.email.label }}<br>
-            {{ form.email(size=50) }}<br>
-            {% for error in form.email.errors %}
-            <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        <p>
-            {{ form.password.label }}<br>
-            {{ form.password(size=32) }}<br>
-            {% for error in form.password.errors %}
-            <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        <p>
-            {{ form.password2.label }}<br>
-            {{ form.password2(size=32) }}<br>
-            {% for error in form.password2.errors %}
-            <span style="color: red;">[{{ error }}]</span>
-            {% endfor %}
-        </p>
-        <p>{{ form.submit(class="btn-success") }}</p>
-    </div>
-<div class="col-sm-5">
+    		<form action="" method="post">
+            	<h3>Register</h3>
+        	{{ form.hidden_tag() }}
+        	<p>
+            	{{ form.username.label }}<br>
+            	{{ form.username(size=32) }}<br>
+            	{% for error in form.username.errors %}
+            	<span style="color: red;">[{{ error }}]</span>
+            	{% endfor %}
+        	</p>
+        	<p>
+            	{{ form.email.label }}<br>
+            	{{ form.email(size=50) }}<br>
+            	{% for error in form.email.errors %}
+            	<span style="color: red;">[{{ error }}]</span>
+            	{% endfor %}
+        	</p>
+        	<p>
+            	{{ form.password.label }}<br>
+            	{{ form.password(size=32) }}<br>
+            	{% for error in form.password.errors %}
+            	<span style="color: red;">[{{ error }}]</span>
+            	{% endfor %}
+        	</p>
+        	<p>
+            	{{ form.password2.label }}<br>
+            	{{ form.password2(size=32) }}<br>
+            	{% for error in form.password2.errors %}
+            		<span style="color: red;">[{{ error }}]</span>
+            	{% endfor %}
+        	</p>
+        	<p>{{ form.submit(class="btn btn-success") }}</p>
+    	</div>
+	<div class="col-sm-5">
         <h3>annex(v.)</h3>
-        <blockquote>late 14c., "to connect with," from Old French annexer "to join, attach" (13c.), from Medieval Latin annexare, frequentative of Latin annecetere "to bind to," from ad "to" (see ad-) + nectere "to tie, bind" (from PIE root *ned- "to bind, tie"). Usually meaning "to join in a subordinate capacity," but that notion is not in the etymology. Of nations or territories, c. 1400. Related: Annexed; annexing.</blockquote>
+        <blockquote>late 14c., "to connect with," from Old French annexer "to join, attach" (13c.), from Medieval Latin annexare, frequentative 
+	of Latin annecetere "to bind to," from ad "to" (see ad-) + nectere "to tie, bind" (from PIE root *ned- "to bind, tie"). Usually meaning 
+	"to join in a subordinate capacity," but that notion is not in the etymology. Of nations or territories, c. 1400. Related: Annexed; annexing.</blockquote>
         </div>
     </form>
 

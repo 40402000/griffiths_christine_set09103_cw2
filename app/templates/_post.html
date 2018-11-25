@@ -1,7 +1,15 @@
-<table>
-	<tr valign="top">
-            	<td><img src="{{ post.author.avatar(36) }}"></td>
-            	<td><a href="{{ url_for('user', username=post.author.username) }}">{{ post.author.username }} </a>
-		says{{ moment(post.timestamp).fromNow() }} :<br>{{ post.body }}</td>
-        </tr>
-</table>
+<div class="container-flex padPost">
+	<div class="row">
+            	<div class="col-md-1 col-md-offset-3">
+
+			<img class="img-responsive profileImage" src="{{ post.author.avatar(85) }}">
+		</div>
+		<div class="col-md-4">
+			<a class="userPost" href="{{ url_for('user', username=post.author.username) }}">{{ post.author.username }} </a>
+			said {{ moment(post.timestamp).fromNow() }} : <p>{{ post.body }}</p>
+			<div class="fadingLine">
+			</div>
+     		</div>
+	</div>
+</div>
+
